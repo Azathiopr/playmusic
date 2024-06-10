@@ -19,13 +19,15 @@ const PlayBar = () => {
                 {
                     Object.keys(currentTrack).length > 0 &&
                     <div className={s.playbar}>
-                        <img src={preview} alt={title} className={s.preview} />
-                        <IconButton onClick={() => handleToggleAudio(currentTrack)}>
-                            {isPlaying ? <Pause /> : <PlayArrow />}
-                        </IconButton>
-                        <div className={s.credits} >
-                            <h4>{title}</h4>
-                            <p>{artists} </p>
+                        <div className={s.all_info}>
+                            <img src={preview} alt={title} className={s.preview} />
+                            <IconButton onClick={() => handleToggleAudio(currentTrack)}>
+                                {isPlaying ? <Pause /> : <PlayArrow />}
+                            </IconButton>
+                            <div className={s.credits} >
+                                <h4>{title}</h4>
+                                <p>{artists} </p>
+                            </div>
                         </div>
                         <div className={s.slider} >
                             <TimeControls />

@@ -1,12 +1,12 @@
 export default [
     {
         id: 1,
-        src: "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/250/what-i-say-1668733254-7bXF48DYkS.mp3",
+        src: "https://www.dropbox.com/scl/fi/n9gbxg5n4rd942u3zdv8v/fogel-bogatymi-mp3.mp3?rlkey=4e63tv4tvxwwprzemp9wp3qcn&st=a6c3tpai&dl=1",
         preview:
-            "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/001/154/1000x0/no-way-back-1656410436-lmCSrM15Fp.jpg",
-        duration: 215,
-        title: "No Way Back",
-        artists: "Custody",
+            "https://sun9-54.userapi.com/impf/iOIkqonfw1-2VAvvvw1dC4kJJjb4I81OZJMeHA/WxgFPCtLqts.jpg?size=160x160&quality=96&sign=c7079021b0813e76ee942069d928d46c&type=audio",
+        duration: 165,
+        title: "Богатыми",
+        artists: "Фогель",
     },
     {
         id: 2,

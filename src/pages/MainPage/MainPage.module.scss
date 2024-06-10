@@ -1,10 +1,13 @@
 .search {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .input {
-    width: 300px;
-    margin: 10px 150px;
+    width: 70%;
+    margin: 0 auto;
 
     &>* {
         text-align: center !important;

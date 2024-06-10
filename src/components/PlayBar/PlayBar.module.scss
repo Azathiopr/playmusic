@@ -1,10 +1,9 @@
 .playbar {
     position: fixed;
     background-color: #9340fe;
-
-    width: calc(100vw - 40px);
+    // width: calc(100vw - 40px);
+    width: 100%;
     height: 70px;
-
     left: 0;
     bottom: 0;
 
@@ -13,17 +12,37 @@
     padding: 0 20px;
     gap: 30px;
 
-    &>.togglePlay {
-        transform: scale(120%) !important;
+    @media(max-width: 768px) {
+        padding-top: 10px;
+        align-items: baseline;
+        flex-direction: column;
+        height: 120px;
+        gap: 5px;
     }
 
-    &>p {
-        font-size: 14px;
+    .all_info {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @media(max-width: 768px) {
+            gap: 5px;
+        }
+
+        &>.togglePlay {
+            transform: scale(120%) !important;
+        }
+
+        &>p {
+            font-size: 14px;
+        }
+
+        & * {
+            color: white !important;
+        }
     }
 
-    & * {
-        color: white !important;
-    }
+
 }
 
 .preview {
@@ -50,4 +69,9 @@
     gap: 20px;
     flex-basis: 600px;
     margin-left: auto;
+
+    @media(max-width: 768px) {
+        flex-basis: 100%;
+        width: 100%;
+    }
 }
